@@ -1,8 +1,8 @@
 ---
 layout: default-layout
-title: Dynamsoft Label Recognition C++ API Reference - Main Page
+title: Dynamsoft Label Recognition C API Reference - C Functions
 description: This page shows all methods of Dynamsoft Label Recognition for C API Reference.
-keywords: api reference, c, c++
+keywords: api reference, c
 needAutoGenerateSidebar: false
 breadcrumbText: C Functions
 ---
@@ -38,8 +38,6 @@ breadcrumbText: C Functions
   | [`DLR_GetRuntimeSettings`](settings.md#dlr_getruntimesettings) | Gets the current settings and saves it into a struct. |
   | [`DLR_UpdateRuntimeSettings`](settings.md#dlr_updateruntimesettings) | Updates runtime settings with a given struct. |
   | [`DLR_ResetRuntimeSettings`](settings.md#dlr_resetruntimesettings) | Resets the runtime settings. |
-  | [`DLR_GetModeArgument`](settings.md#dlr_getmodeargument) | Gets the optional argument for a specified mode in Modes parameters. |
-  | [`DLR_SetModeArgument`](settings.md#dlr_setmodeargument) | Sets the optional argument for a specified mode in Modes parameters. |
   | [`DLR_AppendSettingsFromString`](settings.md#dlr_appendsettingsfromstring) | Appends LabelRecognitionParameter settings in a string to the SDK object. |
   | [`DLR_OutputSettingsToFile`](settings.md#dlr_outputsettingstofile) | Outputs LabelRecognitionParameter settings into a file (JSON file). |
   | [`DLR_ClearAppendedSettings`](settings.md#dlr_appendsettingsfromstring) | Clears appended LabelRecognitionParameter settings. |
@@ -50,10 +48,10 @@ breadcrumbText: C Functions
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`DLR_RecognizeByBuffer`](recognizing.md#dlr_recognizebybuffer) | Recognizes text from a specified image file. |
-  | [`DLR_RecognizeByFile`](recognizing.md#dlr_recognizebyfile) | Recognizes text from an image file in memory. |
-  | [`DLR_RecognizeBasedOnDBRResultByBuffer`](recognizing.md#dlr_recognizebasedondbrresultbybuffer) | Recognizes text from raw buffer. |
-  | [`DLR_RecognizeBasedOnDBRResultByFile`](recognizing.md#dlr_recognizebasedondbrresultbyfile) | Recognizes text from a base64 encoded string. |
+  | [`DLR_RecognizeByBuffer`](recognizing.md#dlr_recognizebybuffer) | Recognizes text from memory buffer containing image pixels in defined format. |
+  | [`DLR_RecognizeByFile`](recognizing.md#dlr_recognizebyfile) | Recognizes text from a specified image file. |
+  | [`DLR_RecognizeBasedOnDBRResultsByBuffer`](recognizing.md#dlr_RecognizeBasedOnDBRResultsByBuffer) | Recognizes text from memory buffer containing image pixels in defined format according to barcode results from DBR SDK. |
+  | [`DLR_RecognizeBasedOnDBRResultsByFile`](recognizing.md#dlr_RecognizeBasedOnDBRResultsByFile) | Recognizes text from a specified image file according to barcode results from DBR SDK. |
    
 &nbsp; 
    
